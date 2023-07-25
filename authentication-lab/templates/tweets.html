@@ -1,0 +1,11 @@
+<head>
+	all tweets
+</head>
+<body>
+	{% for user_id in tweets %}
+		{% for tweet in tweets[user_id] %}
+			<h1> Title: {{tweets[user_id][tweet]["title"]}}</h1>
+			<h2> Text: {{tweets[user_id][tweet]["text"]}}</h2>
+		{% endfor %}
+{%endfor%}
+</body>
